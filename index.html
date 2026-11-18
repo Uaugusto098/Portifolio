@@ -173,7 +173,6 @@
       box-shadow: 0 24px 60px rgba(139, 92, 246, 0.09);
     }
 
-    /* Alternating option or consistent left-media right-explanation */
     @media (max-width: 1024px) {
       .proj-card {
         grid-template-columns: 1fr;
@@ -202,7 +201,6 @@
       }
     }
 
-    /* Carousel Container inside .ph */
     .carousel {
       position: relative;
       width: 100%;
@@ -252,7 +250,6 @@
       }
     }
 
-    /* Uncropped image styling inside stage */
     .carousel-slide img.stage-img {
       width: 100%;
       height: 100%;
@@ -271,7 +268,6 @@
       transform: scale(1.01);
     }
 
-    /* Featured vs Legacy visual treatment for NASA slides */
     .carousel-slide.featured img.stage-img {
       filter: brightness(1.04) contrast(1.04);
       border-color: rgba(139, 92, 246, 0.35);
@@ -291,7 +287,6 @@
       border-color: rgba(168, 85, 247, 0.4);
     }
 
-    /* Slide Status Badges (DESTAQUE / REGISTRO ANTERIOR / ARQUITETURA) */
     .slide-badge {
       position: absolute;
       top: 0.65rem;
@@ -349,7 +344,6 @@
       border-color: rgba(139, 92, 246, 0.35);
     }
 
-    /* Prev / Next Overlay Buttons */
     .c-btn {
       position: absolute;
       top: 50%;
@@ -388,7 +382,6 @@
       right: 0.65rem;
     }
 
-    /* Carousel Footer Bar: Caption + Dots + Counter */
     .carousel-bar {
       display: flex;
       align-items: center;
@@ -444,9 +437,7 @@
       color: var(--mu-dim);
     }
 
-    /* ==========================================
-       .bd = Project Explanation Side
-       ========================================== */
+    /* .bd = Project Explanation Side */
     .bd {
       padding: 2rem 2rem;
       display: flex;
@@ -506,7 +497,6 @@
       line-height: 1.58;
     }
 
-    /* Structured Feature Highlights (Especially for RAG & Technical Depth) */
     .feature-list {
       display: flex;
       flex-direction: column;
@@ -546,7 +536,6 @@
       line-height: 1.48;
     }
 
-    /* Tech Stack Tags */
     .tech-tags {
       display: flex;
       flex-wrap: wrap;
@@ -570,7 +559,6 @@
       border-color: rgba(139, 92, 246, 0.35);
     }
 
-    /* Horizontal CTA Container (.cta) */
     .cta {
       display: flex;
       flex-wrap: wrap;
@@ -619,7 +607,6 @@
       transform: translateY(-1px);
     }
 
-    /* Interactive Diagram Stage inside RAG Carousel */
     .rag-diagram-card {
       width: 100%;
       height: 100%;
@@ -644,7 +631,6 @@
       border-color: rgba(168, 85, 247, 0.55);
     }
 
-    /* Animated flow line inside SVG */
     @keyframes dashFlow {
       to {
         stroke-dashoffset: -24;
@@ -706,7 +692,6 @@
       border-radius: 0.5rem;
     }
 
-    /* Timeline & Cards for Experience / Courses */
     .exp-card {
       background: var(--card);
       border: 1px solid var(--bd);
@@ -810,13 +795,24 @@
          ========================================== -->
     <section id="sobre" class="py-20 border-b border-white/[0.06]">
       <div class="wrap">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           <div class="lg:col-span-5">
             <div class="sec-tag">01 // SOBRE MIM</div>
             <h2 class="sec-title mb-4">Rigor de engenharia aplicado a IA e sistemas críticos.</h2>
-            <p class="text-zinc-400 text-sm leading-relaxed">
+            <p class="text-zinc-400 text-sm leading-relaxed mb-6">
               Combino fundamentos sólidos de Ciência da Computação com experimentação prática em hackathons internacionais, projetos acadêmicos e desenvolvimento de software orientado a dados.
             </p>
+            <!-- Profile Avatar / Card Image Embedded in Base64 -->
+            <div class="p-4 rounded-xl bg-[#0A0A0C] border border-purple-500/30 flex items-center gap-4 shadow-xl shadow-purple-600/10">
+              <div class="w-16 h-16 rounded-lg overflow-hidden border border-purple-500/40 flex-shrink-0 bg-gradient-to-br from-purple-600 to-fuchsia-700 flex items-center justify-center">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAgMTIwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCI+CiAgPHJlY3Qgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiMwNzA3MEMiLz4KICAgPHNpcmNsZSBjeD0iNjAiIGN5PSI0OCIgcj0iMjIiIGZpbGw9IiM4QjVDRjYiIGZpbGwtb3BhY2l0eT0iMC4zMiIgc3Ryb2tlPSIjQThjNUY3IiBzdHJva2Utd2lkdGg9IjIuNSIvPgogICA8cGF0aCBkPSJNYzE2IDEwNyBDMTYgODYgMzggODEgNjAgODEgQzgyIDgxIDEwNCA4NiAxMTAgMTA3IFoiIGZpbGw9IiM4QjVDRjYiIGZpbGwtb3BhY2l0eT0iMC4yOCIgc3Ryb2tlPSIjQThjNUY3IiBzdHJva2Utd2lkdGg9IjIuNSIvPgogPC9zdmc+" alt="Pedro Augusto Borges de Sá" class="w-full h-full object-cover" />
+              </div>
+              <div>
+                <h4 class="text-white font-display font-bold text-sm">Pedro Augusto Borges de Sá</h4>
+                <p class="text-purple-300 mono text-xs">Engenheiro de Software &amp; IA</p>
+                <p class="text-zinc-400 text-[11px] mt-0.5">Sistemas RAG, NASA Space Apps &amp; Dados</p>
+              </div>
+            </div>
           </div>
 
           <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -841,7 +837,7 @@
     </section>
 
     <!-- ==========================================
-         PROJETOS SECTION (#projetos) — REFINED
+         PROJETOS SECTION (#projetos)
          ========================================== -->
     <section id="projetos" class="py-24 border-b border-white/[0.06]">
       <div class="wrap">
@@ -861,7 +857,6 @@
                CARD 1: RAG PARA ESCRITA ACADÊMICA COM CITAÇÕES VERIFICADAS
                ========================================================== -->
           <article class="proj-card" id="card-rag">
-            <!-- Left Side: Interactive Visual Architecture & Verification Carousel (.ph) -->
             <div class="ph">
               <div class="carousel" data-carousel="rag" tabindex="0" aria-label="Carrossel de Arquitetura do Projeto RAG">
                 <button class="c-btn prev" type="button" aria-label="Slide anterior" data-dir="-1">
@@ -878,9 +873,8 @@
                 <div class="carousel-viewport">
                   <span class="zoom-hint">🔍 Clique para ampliar</span>
 
-                  <!-- SLIDE 1: Pipeline Híbrido BM25 + Embeddings -> Claude API -> Validador Anti-Alucinação -> ABNT .docx -->
                   <div class="carousel-slide active"
-                       data-caption="Slide 1/2 — Arquitetura: Pipeline Híbrido (BM25 + Embeddings) → Claude API → Validador Anti-Alucinação → ABNT .docx">
+                       data-caption=" Arquitetura: Pipeline Híbrido (BM25 + Embeddings) → Claude API → Validador Anti-Alucinação → ABNT .docx">
                     <span class="slide-badge destaque">
                       <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
                       ARQUITETURA & PIPELINE
@@ -896,7 +890,6 @@
                         </span>
                       </div>
 
-                      <!-- Crisp Vector Pipeline Diagram -->
                       <svg viewBox="0 0 680 310" class="w-full h-auto my-auto select-none" role="img" aria-label="Diagrama do Pipeline RAG">
                         <defs>
                           <linearGradient id="gradPurple" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -915,7 +908,6 @@
                           </marker>
                         </defs>
 
-                        <!-- Stage 1: PDF & OCR Ingestion -->
                         <rect x="14" y="34" width="136" height="108" rx="10" fill="#0D0D12" stroke="#3F3F46" stroke-width="1.2" />
                         <text x="26" y="56" fill="#A855F7" font-family="JetBrains Mono" font-size="9.5" font-weight="600">01. INGESTÃO &amp; OCR</text>
                         <text x="26" y="76" fill="#FAFAFA" font-family="Space Grotesk" font-size="12" font-weight="700">PDFs Acadêmicos</text>
@@ -923,10 +915,20 @@
                         <text x="26" y="110" fill="#A1A1AA" font-family="Inter" font-size="9.5">• Chunking c/ metadado</text>
                         <text x="26" y="126" fill="#DDD6FE" font-family="JetBrains Mono" font-size="8.5">[doc_id, autor, pág]</text>
 
-                        <!-- Arrow 1 -> 2 -->
-                        <line x1="150" y1="88" x2="182" y2="88" stroke="#A855F7" stroke-width="1.8" class="flow-line" marker-end="url(#arrowP)" />
+                        <!-- Arrow 3 -> 4 (Down & Across to Validator) -->
+                        <path d="M 447 142 L 447 195 L 436 195" fill="none" stroke="#A855F7" stroke-width="1.8" class="flow-line" marker-end="url(#arrowP)" />
 
-                        <!-- Stage 2: Hybrid Search (BM25 + Embeddings) -->
+                        <!-- Stage 4: Deterministic Anti-Hallucination Validator -->
+                        <rect x="115" y="176" width="315" height="112" rx="10" fill="url(#gradEmerald)" stroke="#10B981" stroke-width="1.5" />
+                        <text x="127" y="198" fill="#6EE7B7" font-family="JetBrains Mono" font-size="9.5" font-weight="600">04. VALIDADOR ANTI-ALUCINAÇÃO (CÓDIGO)</text>
+                        <text x="127" y="218" fill="#FAFAFA" font-family="Space Grotesk" font-size="11.5" font-weight="700">Auditoria Determinística de Citações</text>
+                        <text x="127" y="236" fill="#D1FAE5" font-family="Inter" font-size="9">✓ Verifica existência real do trecho no chunk fonte</text>
+                        <text x="127" y="252" fill="#D1FAE5" font-family="Inter" font-size="9">✓ Confirma correspondência exata de Autor, Ano e Página</text>
+                        <text x="127" y="270" fill="#A7F3D0" font-family="JetBrains Mono" font-size="8.5">Rejeita/corrige qualquer extrapolação fora do corpus</text>
+
+                        <!-- Arrow 4 -> 5 -->
+                        <line x1="430" y1="232" x2="528" y2="232" stroke="#10B981" stroke-width="1.8" class="flow-line" marker-end="url(#arrowG)" />
+
                         <rect x="186" y="24" width="154" height="128" rx="10" fill="url(#gradPurple)" stroke="#8B5CF6" stroke-width="1.4" />
                         <text x="198" y="46" fill="#DDD6FE" font-family="JetBrains Mono" font-size="9.5" font-weight="600">02. BUSCA HÍBRIDA</text>
                         <rect x="198" y="56" width="130" height="34" rx="6" fill="#09090D" stroke="#6D28D9" />
@@ -938,10 +940,8 @@
                         <text x="208" y="123" fill="#A1A1AA" font-family="Inter" font-size="8.5">Similaridade semântica</text>
                         <text x="202" y="144" fill="#E9D5FF" font-family="JetBrains Mono" font-size="8.5">Reciprocal Rank Fusion</text>
 
-                        <!-- Arrow 2 -> 3 -->
                         <line x1="340" y1="88" x2="372" y2="88" stroke="#A855F7" stroke-width="1.8" class="flow-line" marker-end="url(#arrowP)" />
 
-                        <!-- Stage 3: Claude API + Fallback -->
                         <rect x="376" y="34" width="142" height="108" rx="10" fill="#0D0D12" stroke="#A855F7" stroke-width="1.3" />
                         <text x="388" y="56" fill="#C084FC" font-family="JetBrains Mono" font-size="9.5" font-weight="600">03. GERAÇÃO LLM</text>
                         <text x="388" y="76" fill="#FAFAFA" font-family="Space Grotesk" font-size="12" font-weight="700">Claude API</text>
@@ -949,21 +949,6 @@
                         <text x="388" y="110" fill="#A1A1AA" font-family="Inter" font-size="9.5">• Fallback multi-modelo</text>
                         <text x="388" y="126" fill="#F3E8FF" font-family="JetBrains Mono" font-size="8.5">Citação + Pág obrigatória</text>
 
-                        <!-- Arrow 3 -> 4 (Down & Across to Validator) -->
-                        <path d="M 447 142 L 447 195 L 395 195" fill="none" stroke="#A855F7" stroke-width="1.8" class="flow-line" marker-end="url(#arrowP)" />
-
-                        <!-- Stage 4: Deterministic Anti-Hallucination Validator -->
-                        <rect x="140" y="176" width="250" height="112" rx="10" fill="url(#gradEmerald)" stroke="#10B981" stroke-width="1.5" />
-                        <text x="154" y="198" fill="#6EE7B7" font-family="JetBrains Mono" font-size="9.5" font-weight="600">04. VALIDADOR ANTI-ALUCINAÇÃO (CÓDIGO)</text>
-                        <text x="154" y="218" fill="#FAFAFA" font-family="Space Grotesk" font-size="11.5" font-weight="700">Auditoria Determinística de Citações</text>
-                        <text x="154" y="236" fill="#D1FAE5" font-family="Inter" font-size="9.5">✓ Verifica existência real do trecho no chunk fonte</text>
-                        <text x="154" y="252" fill="#D1FAE5" font-family="Inter" font-size="9.5">✓ Confirma correspondência exata de Autor, Ano e Página</text>
-                        <text x="154" y="270" fill="#A7F3D0" font-family="JetBrains Mono" font-size="8.5">Rejeita/corrige qualquer extrapolação fora do corpus</text>
-
-                        <!-- Arrow 4 -> 5 -->
-                        <line x1="390" y1="232" x2="528" y2="232" stroke="#10B981" stroke-width="1.8" class="flow-line" marker-end="url(#arrowG)" />
-
-                        <!-- Stage 5: ABNT .docx Compiler -->
                         <rect x="532" y="176" width="134" height="112" rx="10" fill="#0D0D12" stroke="#10B981" stroke-width="1.3" />
                         <text x="544" y="198" fill="#6EE7B7" font-family="JetBrains Mono" font-size="9.5" font-weight="600">05. EXPORTAÇÃO</text>
                         <text x="544" y="219" fill="#FAFAFA" font-family="Space Grotesk" font-size="12" font-weight="700">ABNT .docx</text>
@@ -980,7 +965,6 @@
                     </div>
                   </div>
 
-                  <!-- SLIDE 2: Exemplo de Verificação Determinística de Citações e Página Exata -->
                   <div class="carousel-slide"
                        data-caption="Slide 2/2 — Auditoria Determinística: Verificação de Citação, Trecho Literal e Página Exata">
                     <span class="slide-badge destaque">
@@ -999,7 +983,6 @@
                       </div>
 
                       <svg viewBox="0 0 680 310" class="w-full h-auto my-auto select-none" role="img" aria-label="Exemplo de Verificação Determinística de Citações">
-                        <!-- Left Box: Fonte Original Indexada -->
                         <rect x="14" y="18" width="305" height="132" rx="10" fill="#0B0B10" stroke="#8B5CF6" stroke-width="1.3" />
                         <text x="28" y="40" fill="#C084FC" font-family="JetBrains Mono" font-size="9.5" font-weight="600">CHUNK FONTE INDEXADO (CORPUS PDF)</text>
                         <text x="28" y="60" fill="#FAFAFA" font-family="JetBrains Mono" font-size="10">doc: silva_2023_arquitetura.pdf | pág: 42</text>
@@ -1008,7 +991,6 @@
                         <text x="36" y="104" fill="#E4E4E7" font-family="Inter" font-size="9.5">revocação em 38% quando comparada ao</text>
                         <text x="36" y="120" fill="#A7F3D0" font-family="Inter" font-size="9.5" font-weight="600">uso isolado de vetores densos."</text>
 
-                        <!-- Right Box: Saída da Claude API -->
                         <rect x="360" y="18" width="306" height="132" rx="10" fill="#0B0B10" stroke="#A855F7" stroke-width="1.3" />
                         <text x="374" y="40" fill="#E879F9" font-family="JetBrains Mono" font-size="9.5" font-weight="600">SAÍDA ESTRUTURADA (CLAUDE API)</text>
                         <text x="374" y="60" fill="#FAFAFA" font-family="JetBrains Mono" font-size="10">citação_id: #CIT-09 | tipo: direta_curta</text>
@@ -1017,7 +999,6 @@
                         <text x="382" y="104" fill="#E4E4E7" font-family="Inter" font-size="9.5">híbrida reduz falhas de revocação em 38%"</text>
                         <text x="382" y="122" fill="#DDD6FE" font-family="JetBrains Mono" font-size="9">ref_tag: (SILVA, 2023, p. 42)</text>
 
-                        <!-- Bottom Box: Deterministic Audit Log -->
                         <rect x="14" y="168" width="652" height="126" rx="10" fill="#07120E" stroke="#10B981" stroke-width="1.5" />
                         <text x="28" y="191" fill="#6EE7B7" font-family="JetBrains Mono" font-size="10" font-weight="600">
                           RELATÓRIO DO VALIDADOR DETERMINÍSTICO (PYTHON AST + FUZZY/EXACT MATCH)
@@ -1045,9 +1026,8 @@
                   </div>
                 </div>
 
-                <!-- Carousel Footer Controls -->
                 <div class="carousel-bar">
-                  <span class="carousel-caption">Slide 1/2 — Arquitetura: Pipeline Híbrido (BM25 + Embeddings) → Claude API → Validador Anti-Alucinação → ABNT .docx</span>
+                  <span class="carousel-caption">Arquitetura: Pipeline Híbrido (BM25 + Embeddings) → Claude API → Validador Anti-Alucinação → ABNT .docx</span>
                   <div class="carousel-meta">
                     <div class="c-dots" role="tablist">
                       <button class="c-dot active" type="button" aria-label="Ir para slide 1" data-slide="0"></button>
@@ -1059,7 +1039,6 @@
               </div>
             </div>
 
-            <!-- Right Side: Punchy, Scannable, High-Impact Technical Explanation (.bd) -->
             <div class="bd">
               <div>
                 <div class="proj-header-meta">
@@ -1074,7 +1053,6 @@
                   Pipeline de engenharia de IA projetado para produção científica rigorosa: recupera evidências exatas em acervos de PDFs e gera textos acadêmicos em <strong class="text-white font-medium">formato ABNT nativo (<span class="mono text-xs text-purple-300">.docx</span>)</strong> com verificação determinística de cada citação e página.
                 </p>
 
-                <!-- 3 Structured Feature Highlights -->
                 <div class="feature-list">
                   <div class="feature-item">
                     <div class="feature-item-title">
@@ -1141,7 +1119,6 @@
                CARD 2: NASA SPACE APPS CHALLENGE — SEPS EARTH
                ========================================================== -->
           <article class="proj-card" id="card-nasa">
-            <!-- Left Side: Uncropped Carousel with 2 Featured Globe/Brazil Slides + 2 Legacy Slides -->
             <div class="ph">
               <div class="carousel" data-carousel="nasa" tabindex="0" aria-label="Carrossel de Imagens SEPS Earth NASA Space Apps">
                 <button class="c-btn prev" type="button" aria-label="Slide anterior" data-dir="-1">
@@ -1158,15 +1135,14 @@
                 <div class="carousel-viewport">
                   <span class="zoom-hint">🔍 Clique para ampliar</span>
 
-                  <!-- SLIDE 1 (FEATURED): Captura de tela 2026-11-17 005828.jpg -->
                   <div class="carousel-slide active featured"
-                       data-caption="Slide 1/4 — [DESTAQUE] Globo 3D Interativo SEPS Earth focado no Brasil e América do Sul">
+                       data-caption="Globo 3D Interativo SEPS Earth focado no Brasil e América do Sul">
                     <span class="slide-badge destaque">
                       <span class="w-1.5 h-1.5 rounded-full bg-purple-400 animate-ping"></span>
                       DESTAQUE
                     </span>
                     <img
-                      src="Captura de tela 2026-11-17 005828.jpg"
+                      src="source/globo1.png"
                       alt="SEPS Earth — Visualização Global 3D com foco no Brasil e monitoramento orbital de eventos extremos"
                       class="stage-img lb-trigger"
                       data-fallback="nasa-globe-1"
@@ -1174,15 +1150,14 @@
                     />
                   </div>
 
-                  <!-- SLIDE 2 (FEATURED): Captura de tela 2026-11-17 005954.jpg -->
                   <div class="carousel-slide featured"
-                       data-caption="Slide 2/4 — [DESTAQUE] Camadas de Telemetria Orbital e Focos de Desastres no Território Brasileiro">
+                       data-caption="Camadas de Telemetria Orbital e Focos de Desastres no Território Brasileiro">
                     <span class="slide-badge destaque">
                       <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
                       DESTAQUE
                     </span>
                     <img
-                      src="Captura de tela 2026-11-17 005954.jpg"
+                      src="source/globo2.png"
                       alt="SEPS Earth — Detalhamento de alertas de satélite sobre o Brasil e análise geoespacial"
                       class="stage-img lb-trigger"
                       data-fallback="nasa-globe-2"
@@ -1190,14 +1165,13 @@
                     />
                   </div>
 
-                  <!-- SLIDE 3 (SECONDARY / LEGACY): Registro Anterior 1 -->
                   <div class="carousel-slide legacy"
-                       data-caption="Slide 3/4 — [REGISTRO ANTERIOR] Interface inicial de listagem de alertas e telemetria">
+                       data-caption=" Interface de listagem de alertas e telemetria">
                     <span class="slide-badge legacy-tag">
                       REGISTRO ANTERIOR
                     </span>
                     <img
-                      src="seps-legacy-1.jpg"
+                      src="source/globo3.png"
                       alt="Registro anterior da interface SEPS Earth durante o desenvolvimento inicial"
                       class="stage-img lb-trigger"
                       data-fallback="nasa-legacy-1"
@@ -1205,39 +1179,24 @@
                     />
                   </div>
 
-                  <!-- SLIDE 4 (SECONDARY / LEGACY): Registro Anterior 2 -->
-                  <div class="carousel-slide legacy"
-                       data-caption="Slide 4/4 — [REGISTRO ANTERIOR] Protótipo inicial de camadas 2D do hackathon">
-                    <span class="slide-badge legacy-tag">
-                      REGISTRO ANTERIOR
-                    </span>
-                    <img
-                      src="seps-legacy-2.jpg"
-                      alt="Registro anterior do painel 2D SEPS Earth"
-                      class="stage-img lb-trigger"
-                      data-fallback="nasa-legacy-2"
-                      onerror="applySmartFallback(this, 'nasa-legacy-2')"
-                    />
-                  </div>
+                  
                 </div>
 
-                <!-- Carousel Footer Controls -->
                 <div class="carousel-bar">
-                  <span class="carousel-caption">Slide 1/4 — [DESTAQUE] Globo 3D Interativo SEPS Earth focado no Brasil e América do Sul</span>
+                  <span class="carousel-caption"> Globo 3D Interativo SEPS Earth focado no Brasil e América do Sul</span>
                   <div class="carousel-meta">
                     <div class="c-dots" role="tablist">
                       <button class="c-dot active" type="button" aria-label="Ir para slide 1" data-slide="0"></button>
                       <button class="c-dot" type="button" aria-label="Ir para slide 2" data-slide="1"></button>
                       <button class="c-dot" type="button" aria-label="Ir para slide 3" data-slide="2"></button>
-                      <button class="c-dot" type="button" aria-label="Ir para slide 4" data-slide="3"></button>
+                      
                     </div>
-                    <span class="c-counter">01 / 04</span>
+                    <span class="c-counter">01 / 03</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Right Side: Project Explanation (.bd) + Horizontal .cta without Demo button -->
             <div class="bd">
               <div>
                 <div class="proj-header-meta">
@@ -1284,9 +1243,8 @@
                   <span class="tech-tag">Visualização Científica</span>
                 </div>
 
-                <!-- Horizontal CTA Container — "Demo" removed completely; keeping "Ver projeto", "Post no LinkedIn", "Ver certificado" -->
                 <div class="cta">
-                  <a href="https://github.com/pedroaugusto-bs" target="_blank" rel="noopener noreferrer" class="btn-cta primary">
+                  <a href="https://www.seps.earth/" target="_blank" rel="noopener noreferrer" class="btn-cta primary">
                     <span>Ver projeto</span>
                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -1300,6 +1258,7 @@
                     </svg>
                   </a>
 
+                  <!-- Certificado NASA (certificadonasa.png) -->
                   <button type="button" class="btn-cta ghost" onclick="openCertificateLightbox('nasa')">
                     <svg class="w-3.5 h-3.5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -1315,7 +1274,6 @@
                CARD 3: HACKATHON EXPERIMENTA — PORTAL E BANCO DE DADOS SOCIOASSISTENCIAL
                ========================================================== -->
           <article class="proj-card" id="card-experimenta">
-            <!-- Left Side: Uncropped Carousel featuring IMG_3410.JPG as the main photo -->
             <div class="ph">
               <div class="carousel" data-carousel="experimenta" tabindex="0" aria-label="Carrossel Hackathon Experimenta">
                 <button class="c-btn prev" type="button" aria-label="Slide anterior" data-dir="-1">
@@ -1332,15 +1290,14 @@
                 <div class="carousel-viewport">
                   <span class="zoom-hint">🔍 Clique para ampliar</span>
 
-                  <!-- SLIDE 1 (MAIN PHOTO): IMG_3410.JPG uncropped and large -->
                   <div class="carousel-slide active featured"
-                       data-caption="Slide 1/2 — Registro oficial no Hackathon Experimenta (IMG_3410.JPG)">
+                       data-caption="Registro oficial no Hackathon Experimenta">
                     <span class="slide-badge destaque">
                       <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
                       HACKATHON EXPERIMENTA
                     </span>
                     <img
-                      src="IMG_3410.JPG"
+                      src="source/experimenta2.JPG"
                       alt="Pedro Augusto e equipe durante apresentação da solução no Hackathon Experimenta (IMG_3410.JPG)"
                       class="stage-img lb-trigger"
                       data-fallback="experimenta-main"
@@ -1348,16 +1305,15 @@
                     />
                   </div>
 
-                  <!-- SLIDE 2: Arquitetura do Banco de Dados & Portal Socioassistencial -->
                   <div class="carousel-slide"
-                       data-caption="Slide 2/2 — Modelagem Relacional Centralizada & Fluxo de Atendimento Socioassistencial">
+                       data-caption="Equipe desenvolvendo as soluções iniciais">
                     <span class="slide-badge destaque">
                       <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-                      MODELAGEM DE DADOS
+                      Working!
                     </span>
                     <img
-                      src="experimenta-schema.jpg"
-                      alt="Arquitetura do Portal e Banco de Dados Socioassistencial"
+                      src="source/experimenta4.JPG"
+                      alt="Equipe desenvolvendo as soluções iniciais"
                       class="stage-img lb-trigger"
                       data-fallback="experimenta-schema"
                       onerror="applySmartFallback(this, 'experimenta-schema')"
@@ -1365,9 +1321,8 @@
                   </div>
                 </div>
 
-                <!-- Carousel Footer Controls -->
                 <div class="carousel-bar">
-                  <span class="carousel-caption">Slide 1/2 — Registro oficial no Hackathon Experimenta (IMG_3410.JPG)</span>
+                  <span class="carousel-caption">Registro oficial no Hackathon Experimenta</span>
                   <div class="carousel-meta">
                     <div class="c-dots" role="tablist">
                       <button class="c-dot active" type="button" aria-label="Ir para slide 1" data-slide="0"></button>
@@ -1379,7 +1334,6 @@
               </div>
             </div>
 
-            <!-- Right Side: Project Explanation (.bd) -->
             <div class="bd">
               <div>
                 <div class="proj-header-meta">
@@ -1427,8 +1381,8 @@
                 </div>
 
                 <div class="cta">
-                  <button type="button" class="btn-cta primary" onclick="openCardSlideLightbox('experimenta', 0)">
-                    <span>Ampliar Foto (IMG_3410.JPG)</span>
+                 
+                    
                   </button>
                   <a href="https://www.linkedin.com/in/pedro-augusto-borges-de-sa/" target="_blank" rel="noopener noreferrer" class="btn-cta ghost">
                     <span>Post no LinkedIn</span>
@@ -1436,6 +1390,13 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                   </a>
+                  <!-- Certificado Experimenta (certificadoexperimenta.png) -->
+                  <button type="button" class="btn-cta ghost" onclick="openCertificateLightbox('experimenta')">
+                    <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>Ver certificado</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -1558,7 +1519,7 @@
 
       <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500 mono">
         <span>© 2026 Pedro Augusto Borges de Sá. Todos os direitos reservados.</span>
-        <span>Design Minimalista Dark • Space Grotesk &amp; JetBrains Mono</span>
+       
       </div>
     </div>
   </footer>
@@ -1595,7 +1556,7 @@
       document.documentElement.style.setProperty('--my', `${e.clientY}px`);
     });
 
-    /* 2. High-Resolution Uncropped SVG Fallbacks if local .jpg/.JPG files aren't in preview directory */
+    /* 2. High-Resolution Uncropped SVG Fallbacks if local image files aren't in preview directory */
     function generateFallbackSVGDataURI(type) {
       let svg = '';
 
@@ -1620,171 +1581,29 @@
             </radialGradient>
           </defs>
           <rect width="1280" height="760" fill="url(#spaceBg)"/>
-          <!-- Top HUD Bar -->
           <rect x="24" y="20" width="1232" height="48" rx="10" fill="#0A0A0F" stroke="#27272A"/>
           <circle cx="48" cy="44" r="6" fill="#8B5CF6"/>
           <text x="66" y="49" fill="#FAFAFA" font-family="Space Grotesk, sans-serif" font-size="16" font-weight="700">SEPS EARTH // NASA SPACE APPS</text>
           <text x="360" y="49" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="12">Captura de tela 2026-11-17 005828.jpg • TELEMETRIA ORBITAL BRASIL</text>
           <rect x="1080" y="31" width="156" height="26" rx="6" fill="#10B981" fill-opacity="0.15" stroke="#10B981"/>
           <text x="1096" y="48" fill="#6EE7B7" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600">● LIVE EONET/FIRMS</text>
-
-          <!-- 3D Globe Centered on Brazil -->
           <circle cx="680" cy="410" r="275" fill="url(#atmoGlow)"/>
           <circle cx="680" cy="410" r="250" fill="url(#earthGrad)" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.45"/>
-
-          <!-- Latitude / Longitude Grid Curves -->
           <ellipse cx="680" cy="410" rx="250" ry="90" fill="none" stroke="#38BDF8" stroke-opacity="0.14" stroke-dasharray="4 4"/>
           <ellipse cx="680" cy="410" rx="135" ry="250" fill="none" stroke="#38BDF8" stroke-opacity="0.14" stroke-dasharray="4 4"/>
-
-          <!-- South America & Brazil High-Contrast Vector Silhouette -->
           <path d="M 605 265 L 650 255 L 695 278 L 748 310 L 792 345 L 778 402 L 740 456 L 705 510 L 665 575 L 642 615 L 622 575 L 618 505 L 592 435 L 570 365 L 582 305 Z"
                 fill="#064E3B" fill-opacity="0.7" stroke="#34D399" stroke-width="2"/>
-          <!-- Brazil Highlight Polygon -->
           <path d="M 625 295 L 688 288 L 748 315 L 788 350 L 770 408 L 732 452 L 690 468 L 650 432 L 615 375 Z"
                 fill="#10B981" fill-opacity="0.32" stroke="#6EE7B7" stroke-width="2.2"/>
-
-          <!-- Active Satellite Disaster Hotspots over Brazil -->
           <circle cx="685" cy="355" r="18" fill="#EF4444" fill-opacity="0.28"/>
           <circle cx="685" cy="355" r="6" fill="#EF4444" stroke="#FCA5A5" stroke-width="2"/>
           <circle cx="728" cy="382" r="22" fill="#F59E0B" fill-opacity="0.28"/>
           <circle cx="728" cy="382" r="7" fill="#F59E0B" stroke="#FDE68A" stroke-width="2"/>
           <circle cx="715" cy="435" r="16" fill="#38BDF8" fill-opacity="0.28"/>
           <circle cx="715" cy="435" r="5" fill="#38BDF8" stroke="#BAE6FD" stroke-width="2"/>
-
-          <!-- Left Telemetry Panel -->
           <rect x="34" y="100" width="295" height="590" rx="12" fill="#0B0B10" fill-opacity="0.9" stroke="#27272A"/>
           <text x="54" y="134" fill="#A855F7" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600">REGIÃO EM FOCO: BRASIL</text>
           <text x="54" y="162" fill="#FAFAFA" font-family="Space Grotesk, sans-serif" font-size="18" font-weight="700">Monitoramento de Eventos</text>
-
-          <rect x="52" y="185" width="258" height="82" rx="8" fill="#12121A" stroke="#EF4444" stroke-opacity="0.45"/>
-          <text x="68" y="210" fill="#FCA5A5" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600">🔥 QUEIMADAS / ANOMALIA TÉRMICA</text>
-          <text x="68" y="232" fill="#FAFAFA" font-family="Inter, sans-serif" font-size="13" font-weight="600">Cerrado &amp; Amazônia Meridional</text>
-          <text x="68" y="252" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="11">MODIS / VIIRS • Lat -12.4° Lon -51.8°</text>
-
-          <rect x="52" y="282" width="258" height="82" rx="8" fill="#12121A" stroke="#F59E0B" stroke-opacity="0.45"/>
-          <text x="68" y="307" fill="#FDE68A" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600">⚠️ ESTIAGEM SEVERA</text>
-          <text x="68" y="329" fill="#FAFAFA" font-family="Inter, sans-serif" font-size="13" font-weight="600">Bacia do Pantanal / Centro-Oeste</text>
-          <text x="68" y="349" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="11">Índice NDVI &amp; Umidade Orbital</text>
-
-          <rect x="52" y="379" width="258" height="82" rx="8" fill="#12121A" stroke="#38BDF8" stroke-opacity="0.45"/>
-          <text x="68" y="404" fill="#7DD3FC" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600">🌊 ALERTA HIDROLÓGICO</text>
-          <text x="68" y="426" fill="#FAFAFA" font-family="Inter, sans-serif" font-size="13" font-weight="600">Região Sul / Bacias Costeiras</text>
-          <text x="68" y="446" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="11">Precipitação Acumulada GPM</text>
-
-          <text x="54" y="655" fill="#71717A" font-family="JetBrains Mono, monospace" font-size="11">Projeção Esférica 3D • Sem cortes</text>
-        </svg>`;
-      } else if (type === 'nasa-globe-2') {
-        svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" width="1280" height="760">
-          <rect width="1280" height="760" fill="#05070B"/>
-          <rect x="24" y="20" width="1232" height="48" rx="10" fill="#0A0A0F" stroke="#27272A"/>
-          <circle cx="48" cy="44" r="6" fill="#A855F7"/>
-          <text x="66" y="49" fill="#FAFAFA" font-family="Space Grotesk, sans-serif" font-size="16" font-weight="700">SEPS EARTH // CAMADAS DE SATÉLITE NO BRASIL</text>
-          <text x="470" y="49" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="12">Captura de tela 2026-11-17 005954.jpg • ZOOM AMÉRICA DO SUL</text>
-
-          <!-- Close-up Globe Arc & Brazil Detailed Telemetry -->
-          <circle cx="560" cy="420" r="295" fill="#0B192C" stroke="#8B5CF6" stroke-width="2" stroke-opacity="0.5"/>
-          <path d="M 465 215 L 545 205 L 642 248 L 718 308 L 692 405 L 635 495 L 568 585 L 512 530 L 478 410 L 448 310 Z"
-                fill="#065F46" fill-opacity="0.55" stroke="#10B981" stroke-width="2.5"/>
-
-          <!-- High density cluster nodes -->
-          <circle cx="585" cy="325" r="28" fill="#EF4444" fill-opacity="0.25"/>
-          <circle cx="585" cy="325" r="8" fill="#EF4444" stroke="#FFF" stroke-width="2"/>
-          <line x1="585" y1="325" x2="860" y2="230" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="4 4"/>
-
-          <circle cx="628" cy="395" r="24" fill="#A855F7" fill-opacity="0.28"/>
-          <circle cx="628" cy="395" r="7" fill="#A855F7" stroke="#FFF" stroke-width="2"/>
-          <line x1="628" y1="395" x2="860" y2="410" stroke="#A855F7" stroke-width="1.5" stroke-dasharray="4 4"/>
-
-          <!-- Right Inspection Card -->
-          <rect x="860" y="140" width="380" height="490" rx="12" fill="#0B0B12" stroke="#8B5CF6" stroke-opacity="0.5"/>
-          <text x="885" y="178" fill="#C084FC" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600">TELEMETRIA DETALHADA DO CLUSTER</text>
-          <text x="885" y="208" fill="#FAFAFA" font-family="Space Grotesk, sans-serif" font-size="20" font-weight="700">Brasil Central &amp; Amazônia</text>
-          <text x="885" y="242" fill="#D4D4D8" font-family="Inter, sans-serif" font-size="13">• Radiância Térmica (FRP): 142.8 MW</text>
-          <text x="885" y="268" fill="#D4D4D8" font-family="Inter, sans-serif" font-size="13">• Satélite Fonte: Aqua / Terra / Suomi NPP</text>
-          <text x="885" y="294" fill="#D4D4D8" font-family="Inter, sans-serif" font-size="13">• Confiança da Detecção: 98.4% (Alta)</text>
-
-          <rect x="885" y="335" width="330" height="125" rx="8" fill="#12121C" stroke="#27272A"/>
-          <text x="905" y="365" fill="#6EE7B7" font-family="JetBrains Mono, monospace" font-size="11">CRUZAMENTO DE CAMADAS ATIVO</text>
-          <text x="905" y="392" fill="#FAFAFA" font-family="Inter, sans-serif" font-size="12">✓ Focos de Calor (NASA FIRMS)</text>
-          <text x="905" y="416" fill="#FAFAFA" font-family="Inter, sans-serif" font-size="12">✓ Severidade de Seca &amp; Vento</text>
-          <text x="905" y="440" fill="#FAFAFA" font-family="Inter, sans-serif" font-size="12">✓ Delimitação de Unidades de Conservação</text>
-        </svg>`;
-      } else if (type === 'nasa-legacy-1' || type === 'nasa-legacy-2') {
-        const label = type === 'nasa-legacy-1' ? 'PROTÓTIPO INICIAL v0.1 (PAINEL DE ALERTAS)' : 'PROTÓTIPO INICIAL v0.2 (MAPA PLANO 2D)';
-        svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" width="1280" height="760">
-          <rect width="1280" height="760" fill="#09090C"/>
-          <rect x="40" y="40" width="1200" height="680" rx="12" fill="#0E0E14" stroke="#27272A" stroke-dasharray="8 8"/>
-          <text x="80" y="100" fill="#71717A" font-family="JetBrains Mono, monospace" font-size="14">REGISTRO HISTÓRICO // ${label}</text>
-          <text x="80" y="140" fill="#A1A1AA" font-family="Space Grotesk, sans-serif" font-size="24" font-weight="700">Versão Anterior da Interface SEPS Earth</text>
-          <rect x="80" y="180" width="520" height="480" rx="8" fill="#14141C" stroke="#27272A"/>
-          <rect x="630" y="180" width="560" height="225" rx="8" fill="#14141C" stroke="#27272A"/>
-          <rect x="630" y="435" width="560" height="225" rx="8" fill="#14141C" stroke="#27272A"/>
-          <text x="110" y="420" fill="#71717A" font-family="JetBrains Mono, monospace" font-size="13">Build legada substituída pelo Globo 3D Interativo (Slides 1 e 2)</text>
-        </svg>`;
-      } else if (type === 'experimenta-main') {
-        svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 820" width="1280" height="820">
-          <defs>
-            <linearGradient id="expGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#141122"/>
-              <stop offset="100%" stop-color="#09090E"/>
-            </linearGradient>
-          </defs>
-          <rect width="1280" height="820" fill="url(#expGrad)"/>
-          <rect x="36" y="36" width="1208" height="748" rx="16" fill="#0B0B10" stroke="#8B5CF6" stroke-opacity="0.45" stroke-width="2"/>
-          <text x="76" y="95" fill="#C084FC" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600">ARQUIVO OFICIAL // IMG_3410.JPG (SEM CORTES • OBJECT-FIT: CONTAIN)</text>
-          <text x="76" y="145" fill="#FAFAFA" font-family="Space Grotesk, sans-serif" font-size="34" font-weight="700">Hackathon Experimenta — Equipe &amp; Apresentação</text>
-          <text x="76" y="182" fill="#A1A1AA" font-family="Inter, sans-serif" font-size="16">Portal e Banco de Dados Socioassistencial • Pedro Augusto Borges de Sá</text>
-
-          <!-- Stage visual representation of team & presentation screen -->
-          <rect x="76" y="220" width="1128" height="490" rx="12" fill="#11111A" stroke="#27272A"/>
-          <!-- Presentation Screen in background -->
-          <rect x="540" y="260" width="610" height="360" rx="8" fill="#09090F" stroke="#8B5CF6" stroke-opacity="0.5"/>
-          <text x="570" y="305" fill="#A855F7" font-family="JetBrains Mono, monospace" font-size="13">PROJEÇÃO DO SISTEMA // PORTAL SOCIOASSISTENCIAL</text>
-          <rect x="570" y="328" width="250" height="120" rx="6" fill="#161622"/>
-          <rect x="840" y="328" width="280" height="120" rx="6" fill="#161622"/>
-          <rect x="570" y="468" width="550" height="120" rx="6" fill="#161622"/>
-
-          <!-- Team silhouettes on stage -->
-          <circle cx="220" cy="430" r="48" fill="#8B5CF6" fill-opacity="0.25" stroke="#A855F7" stroke-width="2"/>
-          <path d="M 145 620 C 145 520 295 520 295 620 Z" fill="#8B5CF6" fill-opacity="0.22" stroke="#A855F7" stroke-width="2"/>
-          <circle cx="380" cy="445" r="44" fill="#6366F1" fill-opacity="0.2" stroke="#818CF8" stroke-width="2"/>
-          <path d="M 310 620 C 310 530 450 530 450 620 Z" fill="#6366F1" fill-opacity="0.18" stroke="#818CF8" stroke-width="2"/>
-
-          <text x="76" y="752" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="13">Foto principal atualizada para IMG_3410.JPG • Exibição integral sem corte</text>
-        </svg>`;
-      } else if (type === 'experimenta-schema') {
-        svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" width="1280" height="760">
-          <rect width="1280" height="760" fill="#07070B"/>
-          <text x="60" y="70" fill="#6EE7B7" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600">ARQUITETURA DE DADOS // ESQUEMA RELACIONAL SOCIOASSISTENCIAL</text>
-          <rect x="60" y="110" width="340" height="240" rx="10" fill="#101018" stroke="#8B5CF6" stroke-width="2"/>
-          <text x="85" y="150" fill="#FAFAFA" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700">TB_BENEFICIARIOS_FAMILIA</text>
-          <text x="85" y="185" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="13">PK id_familia (UUID)</text>
-          <text x="85" y="215" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="13">   nis_responsavel (VARCHAR)</text>
-          <text x="85" y="245" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="13">   vulnerabilidade_score (INT)</text>
-          <text x="85" y="275" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="13">   territorio_cras (VARCHAR)</text>
-
-          <rect x="480" y="110" width="340" height="240" rx="10" fill="#101018" stroke="#10B981" stroke-width="2"/>
-          <text x="505" y="150" fill="#FAFAFA" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700">TB_ATENDIMENTOS_ HISTORICO</text>
-          <text x="505" y="185" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="13">PK id_atendimento (UUID)</text>
-          <text x="505" y="215" fill="#6EE7B7" font-family="JetBrains Mono, monospace" font-size="13">FK id_familia_ref</text>
-          <text x="505" y="245" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="13">   assistente_responsavel</text>
-          <text x="505" y="275" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="13">   encaminhamento_status</text>
-
-          <rect x="900" y="110" width="320" height="240" rx="10" fill="#101018" stroke="#A855F7" stroke-width="2"/>
-          <text x="925" y="150" fill="#FAFAFA" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700">TB_RECURSOS_DOACOES</text>
-          <text x="925" y="185" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="13">PK id_recurso (UUID)</text>
-          <text x="925" y="215" fill="#C084FC" font-family="JetBrains Mono, monospace" font-size="13">FK id_atendimento_ref</text>
-          <text x="925" y="245" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="13">   categoria_beneficio</text>
-          <text x="925" y="275" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="13">   data_concessao (TIMESTAMP)</text>
-
-          <line x1="400" y1="220" x2="480" y2="220" stroke="#10B981" stroke-width="3"/>
-          <line x1="820" y1="220" x2="900" y2="220" stroke="#A855F7" stroke-width="3"/>
-
-          <rect x="60" y="420" width="1160" height="260" rx="12" fill="#0D0D14" stroke="#27272A"/>
-          <text x="90" y="465" fill="#FAFAFA" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="700">Painel Unificado de Indicadores Socioassistenciais</text>
-          <text x="90" y="505" fill="#A1A1AA" font-family="Inter, sans-serif" font-size="15">• Eliminação de cadastros duplicados entre entidades parceiras e CRAS</text>
-          <text x="90" y="540" fill="#A1A1AA" font-family="Inter, sans-serif" font-size="15">• Rastreabilidade completa de cestas básicas, benefícios eventuais e acompanhamentos</text>
-          <text x="90" y="575" fill="#A1A1AA" font-family="Inter, sans-serif" font-size="15">• Conformidade com controle de acesso por perfil e proteção de dados sensíveis (LGPD)</text>
         </svg>`;
       } else if (type === 'nasa-cert') {
         svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" width="1200" height="840">
@@ -1800,10 +1619,25 @@
           <text x="600" y="520" text-anchor="middle" fill="#D4D4D8" font-family="Inter, sans-serif" font-size="18">participou com destaque desenvolvendo o projeto SEPS Earth</text>
           <text x="600" y="552" text-anchor="middle" fill="#A1A1AA" font-family="Inter, sans-serif" font-size="16">utilizando dados abertos de observação da Terra da NASA para monitoramento de desastres.</text>
           <line x1="420" y1="660" x2="780" y2="660" stroke="#8B5CF6" stroke-width="1.5"/>
-          <text x="600" y="692" text-anchor="middle" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="13">NASA Space Apps Global Organizing Team</text>
+          <text x="600" y="692" text-anchor="middle" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="13">NASA Space Apps Global Organizing Team (certificadonasa.png)</text>
+        </svg>`;
+      } else if (type === 'experimenta-cert') {
+        svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" width="1200" height="840">
+          <rect width="1200" height="840" fill="#07120E"/>
+          <rect x="40" y="40" width="1120" height="760" rx="18" fill="#0B1C15" stroke="#10B981" stroke-width="3"/>
+          <rect x="64" y="64" width="1072" height="712" rx="12" fill="none" stroke="#6EE7B7" stroke-opacity="0.35" stroke-width="1.5"/>
+          <circle cx="600" cy="170" r="52" fill="#065F46" stroke="#10B981" stroke-width="2"/>
+          <text x="600" y="178" text-anchor="middle" fill="#FAFAFA" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="700">EXPERT</text>
+          <text x="600" y="265" text-anchor="middle" fill="#34D399" font-family="JetBrains Mono, monospace" font-size="15" letter-spacing="4">HACKATHON EXPERIMENTA • 10ª EDIÇÃO</text>
+          <text x="600" y="335" text-anchor="middle" fill="#FAFAFA" font-family="Space Grotesk, sans-serif" font-size="40" font-weight="700">CERTIFICADO DE PREMIAÇÃO / DESTAQUE</text>
+          <text x="600" y="395" text-anchor="middle" fill="#A1A1AA" font-family="Inter, sans-serif" font-size="18">Certificamos que</text>
+          <text x="600" y="455" text-anchor="middle" fill="#A7F3D0" font-family="Space Grotesk, sans-serif" font-size="36" font-weight="700">Pedro Augusto Borges de Sá</text>
+          <text x="600" y="520" text-anchor="middle" fill="#D4D4D8" font-family="Inter, sans-serif" font-size="18">desenvolveu com excelência o Portal e Banco de Dados Socioassistencial</text>
+          <text x="600" y="552" text-anchor="middle" fill="#A1A1AA" font-family="Inter, sans-serif" font-size="16">durante a maratona de desenvolvimento para a Prefeitura de Guarulhos.</text>
+          <line x1="420" y1="660" x2="780" y2="660" stroke="#10B981" stroke-width="1.5"/>
+          <text x="600" y="692" text-anchor="middle" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="13">Comissão Organizadora &amp; Secretarias Municipais (certificadoexperimenta.png)</text>
         </svg>`;
       }
-
       return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
     }
 
@@ -1813,7 +1647,7 @@
       imgEl.src = generateFallbackSVGDataURI(fallbackKey);
     }
 
-    /* 3. Carousel Engine (Prev/Next, Dots, Counter, Keyboard & Touch Swipe) */
+    /* 3. Carousel Engine */
     class ProjectCarousel {
       constructor(root) {
         this.root = root;
@@ -1825,9 +1659,6 @@
         this.prevBtn = root.querySelector('.c-btn.prev');
         this.nextBtn = root.querySelector('.c-btn.next');
         this.currentIndex = 0;
-        this.touchStartX = 0;
-        this.touchEndX = 0;
-
         this.init();
       }
 
@@ -1838,48 +1669,18 @@
             this.goTo(this.currentIndex - 1);
           });
         }
-
         if (this.nextBtn) {
           this.nextBtn.addEventListener('click', (e) => {
             e.stopPropagation();
             this.goTo(this.currentIndex + 1);
           });
         }
-
         this.dots.forEach((dot, idx) => {
           dot.addEventListener('click', (e) => {
             e.stopPropagation();
             this.goTo(idx);
           });
         });
-
-        // Keyboard navigation when focused
-        this.root.addEventListener('keydown', (e) => {
-          if (e.key === 'ArrowLeft') {
-            e.preventDefault();
-            this.goTo(this.currentIndex - 1);
-          } else if (e.key === 'ArrowRight') {
-            e.preventDefault();
-            this.goTo(this.currentIndex + 1);
-          }
-        });
-
-        // Touch swipe support
-        const viewport = this.root.querySelector('.carousel-viewport');
-        if (viewport) {
-          viewport.addEventListener('touchstart', (e) => {
-            this.touchStartX = e.changedTouches[0].screenX;
-          }, { passive: true });
-
-          viewport.addEventListener('touchend', (e) => {
-            this.touchEndX = e.changedTouches[0].screenX;
-            const diff = this.touchStartX - this.touchEndX;
-            if (Math.abs(diff) > 40) {
-              if (diff > 0) this.goTo(this.currentIndex + 1);
-              else this.goTo(this.currentIndex - 1);
-            }
-          }, { passive: true });
-        }
       }
 
       goTo(index) {
@@ -1913,19 +1714,26 @@
       carouselsMap[el.dataset.carousel] = instance;
     });
 
-    /* 4. Lightbox (#lb) Click-to-Zoom for both Images and SVG Diagrams */
+    /* 4. Lightbox (#lb) Click-to-Zoom & Certificates */
     const lb = document.getElementById('lb');
     const lbImg = document.getElementById('lb-img');
     const lbSvgContainer = document.getElementById('lb-svg-container');
     const lbCaption = document.getElementById('lb-caption');
     const lbClose = document.getElementById('lb-close');
 
-    function openLightboxWithImage(src, caption) {
+    function openLightboxWithImage(src, caption, fallbackType) {
       lbSvgContainer.classList.add('hidden');
       lbSvgContainer.innerHTML = '';
       lbImg.classList.remove('hidden');
-      lbImg.src = src;
       lbCaption.textContent = caption || 'Visualização ampliada (sem cortes)';
+      
+      lbImg.onerror = () => {
+        if (fallbackType) {
+          lbImg.src = generateFallbackSVGDataURI(fallbackType);
+        }
+      };
+
+      lbImg.src = src;
       lb.classList.add('open');
       document.body.style.overflow = 'hidden';
     }
@@ -1972,8 +1780,9 @@
 
     function openCertificateLightbox(type) {
       if (type === 'nasa') {
-        const certUri = generateFallbackSVGDataURI('nasa-cert');
-        openLightboxWithImage(certUri, 'Certificado Oficial — NASA International Space Apps Challenge (Pedro Augusto Borges de Sá)');
+        openLightboxWithImage('source/certificadonasa.png', 'Certificado Oficial — NASA International Space Apps Challenge (Pedro Augusto Borges de Sá)', 'nasa-cert');
+      } else if (type === 'experimenta') {
+        openLightboxWithImage('source/certificadoexperimenta.png', 'Certificado Oficial — Hackathon Experimenta 10ª Edição (Pedro Augusto Borges de Sá)', 'experimenta-cert');
       }
     }
 
